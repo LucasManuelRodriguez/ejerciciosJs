@@ -1,7 +1,3 @@
-
-// 4. Teniendo un input de texto y un botón:
-// Desarrollar una función que al hacer click en él, escriba el contenido (value) del input como un título en el documento.
-// 5. Desarrollar una función que escriba en la consola del navegador cada item de una lista de la compra.
 // 6. Desarrollar una función que dibuje una 'Card' de una película en el documento usando un objeto javascript como datos.
 
 
@@ -9,6 +5,7 @@
 // 1. Desarrollar una función que escriba en la consola del navegador cada item de una lista de la compra.
 
 let ferreteria = ["tornillos","martillo","clavo","tarugo","oring","arandela"];
+
 
 function printlist(){
     ferreteria.forEach(e=>{
@@ -24,7 +21,7 @@ function printTitle(titulo){
     boxTitle.innerHTML = `<h1>${titulo}</h1>`
 }
 
-printTitle("Ejercicios JavaScript");
+// printTitle("Ejercicios JavaScript");
 
 //-----------------------------------------------------------------------------------------------------------
 
@@ -36,8 +33,16 @@ function changeColor(color){
     boxTitle.style.backgroundColor=`${color}`
 }
 
+//-----------------------------------------------------------------------------------------------------------
 
+// 4. Teniendo un input de texto y un botón:
+// Desarrollar una función que al hacer click en él, escriba el contenido (value) del input como un título en el documento.
+let boxInput = document.getElementById('inputText');
 
+function captureValue(){
+    printTitle(boxInput.value)
+}
 
+//-----------------------------------------------------------------------------------------------------------
 
-
+// 5. Desarrollar una función que escriba en la consola del navegador cada item de una lista de la compra.
