@@ -61,8 +61,22 @@ function printList(item){
 
 // 6. Desarrollar una función que dibuje una 'Card' de una película en el documento usando un objeto javascript como datos.
 
+let movies = document.getElementById('movies');
 
+let movie = {
+    img: "https://www.enter.co/wp-content/uploads/2019/07/tw-29258-1024x768.jpg",
+    title: "TERMINATOR 2",
+    description: "Tras fracasar en el intento de eliminar a Sarah Connor (Linda Hamilton), un nuevo androide mejorado, un T-1000 (Robert Patrick), llega del futuro para eliminar a su hijo, John Connor (Edward Fulong). Será entonces cuando el robot T-800 (Arnold Schwarzenegger) sea enviado para protegerle."
+}
 
+function printMovie(){
+    movies.innerHTML += `<section class="movie-card">
+                            <img class="movie-img" src="${movie.img}" alt="foto movie Terminator">
+                            <h5 class="movie-title">${movie.title}</h5>
+                            <p class="movie-description">${movie.description}</p>
+                        </section>`;
+}
 
+printMovie();
 
 

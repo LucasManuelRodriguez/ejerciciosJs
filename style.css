@@ -1,9 +1,12 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
 body{
     max-width: 1900px;
-    height: 100vh;
+    height: 120vh;
     background-color: darkcyan;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -34,4 +37,36 @@ form{
     height: 50vh;
     background-color: chocolate;
     
+}
+
+
+#movies{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.movie-card{
+    width: 25%;
+    height: 50%;
+    background-color: #00000038;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    border-radius: 20px;
+}
+
+.movie-img{
+    width: 90%;
+    border-radius: 20px;
+}
+
+.movie-title{
+    font-size: x-large;
+}
+
+.movie-description{
+    text-align: center;
+    font-size: small;
 }
