@@ -20,8 +20,12 @@ printlist()
 //-----------------------------------------------------------------------------------------------------------
 
 // 2. Desarrollar una función que escriba un Título h1 en el documento HTML.
+let boxTitle = document.getElementById('Box-exercise');
+function printTitle(titulo){
+    boxTitle.innerHTML = `<h1>${titulo}</h1>`
+}
 
-
+printTitle("Ejercicios JavaScript");
 
 
 
