@@ -1,0 +1,9 @@
+#Box-exercise{
+    background-color: red;
+    width: 20%;
+    height: 50vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}

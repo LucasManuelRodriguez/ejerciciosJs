@@ -1,5 +1,4 @@
-// 3. Teniendo un cuadrado de color rojo en el documento de HTML:
-// Desarrollar una función que, al hacer click en el mismo, éste se transforme en una círculo de color verde
+
 // 4. Teniendo un input de texto y un botón:
 // Desarrollar una función que al hacer click en él, escriba el contenido (value) del input como un título en el documento.
 // 5. Desarrollar una función que escriba en la consola del navegador cada item de una lista de la compra.
@@ -26,6 +25,18 @@ function printTitle(titulo){
 }
 
 printTitle("Ejercicios JavaScript");
+
+//-----------------------------------------------------------------------------------------------------------
+
+// 3. Teniendo un cuadrado de color rojo en el documento de HTML:
+// Desarrollar una función que, al hacer click en el mismo, éste se transforme en una círculo de color verde
+
+function changeColor(color){
+    boxTitle.style.borderRadius=('100%');
+    boxTitle.style.backgroundColor=`${color}`
+}
+
+
 
 
 
