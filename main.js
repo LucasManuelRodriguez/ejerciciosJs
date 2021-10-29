@@ -1,11 +1,11 @@
-import { shoppingList, movie } from "./datos.js";
-import { readList } from "./recorrerDatos.js";
-import { printlistInConsole } from "./ejercicio1.js";
-import { printTitle } from "./ejercicio2.js";
-import { boxTitleTwo, changeColor} from "./ejercicio3.js";
-import { captureValue } from "./ejercicio4.js";
-import { printList } from "./ejercicio5.js";
-import { printMovies } from "./ejercicio6.js";
+import { shoppingList, movie } from "./scripts/datos.js";
+import { readList } from "./scripts/recorrerDatos.js";
+import { printlistInConsole } from "./scripts/ejercicio1.js";
+import { printTitle } from "./scripts/ejercicio2.js";
+import { boxTitleTwo, changeColor} from "./scripts/ejercicio3.js";
+import { captureValue } from "./scripts/ejercicio4.js";
+import { printList } from "./scripts/ejercicio5.js";
+import { printMovies } from "./scripts/ejercicio6.js";
 
 // 1. Desarrollar una función que escriba en la consola del navegador cada item de una lista de la compra.
 readList(shoppingList,printlistInConsole);
