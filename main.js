@@ -1,82 +1,39 @@
+import { shoppingList, movie } from "./datos.js";
+import { readList } from "./recorrerDatos.js";
+import { printlistInConsole } from "./ejercicio1.js";
+import { printTitle } from "./ejercicio2.js";
+import { boxTitleTwo, changeColor} from "./ejercicio3.js";
+import { captureValue } from "./ejercicio4.js";
+import { printList } from "./ejercicio5.js";
+import { printMovies } from "./ejercicio6.js";
+
 // 1. Desarrollar una función que escriba en la consola del navegador cada item de una lista de la compra.
+readList(shoppingList,printlistInConsole);
 
-let shoppingList = ["tornillos","martillo","clavo","tarugo","oring","arandela"];
-let listItems = document.getElementById('listItems');
-let boxTitle = document.getElementById('Box-exercise');
-let boxInput = document.getElementById('inputText');
-
-
-function readList(){
-    shoppingList.forEach(e=>{
-        printlistInConsole(e)
-        printList(e)
-    })
-}
-readList()
-
-function printlistInConsole(items){
-        console.log(items)
-}
-//-----------------------------------------------------------------------------------------------------------
 
 // 2. Desarrollar una función que escriba un Título h1 en el documento HTML.
+let boxTitle = document.getElementById('Box-exercise');
+printTitle(boxTitle,"Estoy imprimiendo desde otro archivo js");
 
-function printTitle(titulo){
-    boxTitle.innerHTML = `<h1>${titulo}</h1>`
-}
-
-// printTitle("Ejercicios JavaScript");
-
-//-----------------------------------------------------------------------------------------------------------
 
 // 3. Teniendo un cuadrado de color rojo en el documento de HTML:
 // Desarrollar una función que, al hacer click en el mismo, éste se transforme en una círculo de color verde
+boxTitleTwo.addEventListener('click', changeColor);
 
-function changeColor(color){
-    boxTitle.style.borderRadius=('100%');
-    boxTitle.style.backgroundColor=`${color}`
-}
-
-//-----------------------------------------------------------------------------------------------------------
 
 // 4. Teniendo un input de texto y un botón:
 // Desarrollar una función que al hacer click en él, escriba el contenido (value) del input como un título en el documento.
+let botonEnviar = document.getElementById('botonText');
+botonEnviar.addEventListener('click', captureValue);
 
-
-function captureValue(){
-    printTitle(boxInput.value)
-}
-
-//-----------------------------------------------------------------------------------------------------------
 
 // 5. Desarrollar una función que escriba en el documento HTML cada item de una lista de la compra.
+readList(shoppingList,printList)
 
-
-
-function printList(item){
-    listItems.innerHTML += `<li>${item}</li>`
-}
-
-//-----------------------------------------------------------------------------------------------------------
 
 // 6. Desarrollar una función que dibuje una 'Card' de una película en el documento usando un objeto javascript como datos.
 
-let movies = document.getElementById('movies');
-
-let movie = {
-    img: "https://www.enter.co/wp-content/uploads/2019/07/tw-29258-1024x768.jpg",
-    title: "TERMINATOR 2",
-    description: "Tras fracasar en el intento de eliminar a Sarah Connor (Linda Hamilton), un nuevo androide mejorado, un T-1000 (Robert Patrick), llega del futuro para eliminar a su hijo, John Connor (Edward Fulong). Será entonces cuando el robot T-800 (Arnold Schwarzenegger) sea enviado para protegerle."
-}
-
-function printMovie(){
-    movies.innerHTML += `<section class="movie-card">
-                            <img class="movie-img" src="${movie.img}" alt="foto movie Terminator">
-                            <h5 class="movie-title">${movie.title}</h5>
-                            <p class="movie-description">${movie.description}</p>
-                        </section>`;
-}
-
-printMovie();
+let boxMovies = document.getElementById('box-movies');
+printMovies(boxMovies,movie)
 
 
