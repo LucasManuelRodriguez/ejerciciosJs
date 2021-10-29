@@ -2,7 +2,7 @@
 
 body{
     max-width: 1900px;
-    height: 120vh;
+    height: 150vh;
     background-color: darkcyan;
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@ body{
     align-items: center;
 }
 
-#Box-exercise, #Box-exercise_two, #Box-contenido, #shopping-listBox {
+#Box-exercise, #Box-exercise_two, #Box-contenido, #shopping-listBox, #crud-list-box {
     background-color: blue;
     color: white;
     width: 20%;
@@ -22,6 +22,8 @@ body{
     justify-content: center;
     text-align: center;
     z-index: 2;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 
@@ -32,7 +34,11 @@ form{
     justify-content: center;
 }
 
-#movies{
+.movies{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#box-movies{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -61,4 +67,23 @@ form{
 .movie-description{
     text-align: center;
     font-size: small;
+}
+
+#crud-list-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#form-crud{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#botonCrud{
+    height: 25px;
+    width: 20%;
 }
