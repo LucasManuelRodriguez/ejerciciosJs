@@ -6,7 +6,6 @@ import { boxTitleTwo, changeColor} from "./scripts/ejercicio3.js";
 import { captureValue } from "./scripts/ejercicio4.js";
 import { printList } from "./scripts/ejercicio5.js";
 import { printMovies } from "./scripts/ejercicio6.js";
-import { getDataCrud } from "./scripts/crud.js";
 
 // 1. Desarrollar una función que escriba en la consola del navegador cada item de una lista de la compra.
 readList(shoppingList,printlistInConsole);
@@ -37,8 +36,5 @@ readList(shoppingList,printList)
 let boxMovies = document.getElementById('box-movies');
 printMovies(boxMovies,movie)
 
-// 7 . CRUD
-let botonCrud = document.getElementById('botonCrud');
-botonCrud.addEventListener('click',getDataCrud);
 
 

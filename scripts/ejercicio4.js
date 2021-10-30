@@ -3,7 +3,7 @@
 import { printTitle } from "./ejercicio2.js";
 
 let boxInput = document.getElementById('inputText');
-let botonEnviar = document.getElementById('Box-contenido');
+let boxContenido = document.getElementById('Box-contenido');
 
 
 export function captureValue(){
