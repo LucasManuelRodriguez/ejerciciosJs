@@ -9,13 +9,16 @@
 </head>
 <body>
     <section id="crud-list-box" style="background-color:goldenrod;">
-        <ul id="listProducts">
-        </ul>
-        <form id="form-crud">
-            <label for="fname" style="width: 50%;">Ingrese el producto</label>
-            <input type="text" id="nameProduct" placeholder=" Ingrese aquí su producto..." ><br>
-            <input type="reset" id="botonCrud" value="enviar!">
-        </form>
+        <section>
+            <ul id="listProducts">
+            </ul>
+            <form id="form-crud">
+                <label for="fname" style="width: 50%;">Ingrese el producto</label>
+                <input type="text" id="nameProduct" placeholder=" Ingrese aquí su producto..." ><br>
+                <input type="button" id="botonCrud" value="Enviar">
+                <input type="button" id="botonCrudReset" value="Reset">
+            </form>
+        </section>
     </section>
     <script src="./crud.js"></script>
 </body>

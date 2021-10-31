@@ -23,15 +23,19 @@ function readList(boxContenido,lista,accion){
     })
 }
 function printList(item){
-    listProducts.innerHTML += `<li id="${item}">${item} <img id="${item}" src="./assets/delete.png" alt="icon-delete"></li>`
-    let botonDelete = document.getElementById(`${item}`)
+    listProducts.innerHTML += `<li id="${item}">${item}</li>`
+    let botonDelete = document.getElementById(`botonCrudReset`)
+    botonDelete.addEventListener('click',()=>{
+        listProducts.innerHTML = "";
+        console.log(list);
+        removeList(list)
+    })
     
-    botonDelete.addEventListener('click',(event)=>{
-        let productElegido = event.target
-        let product = document.getElementById(`${item}`)
-        list.forEach(e=>{e == product
-        console.log(product)})
-    });
+}
+
+function removeList(array) {
+    array.splice(0,array.length);
+    console.log(list)
 }
 
 
